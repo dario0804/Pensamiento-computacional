@@ -1,0 +1,108 @@
+
+#include <iostream>
+using namespace std;
+int main() {
+    int edad;
+    cin>>edad;
+    if(edad<18){
+        if (edad<13){
+        cout<<"es un niño";}
+        else{
+        cout<<"es adolescente";}
+        }
+    else{
+        cout<<"es un adulto";}
+
+
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    bool a,b;
+    cin>>a>>b;
+    cout<<a and b;
+
+
+    return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    bool exa=true;
+    bool proyeto=true;
+    cin>>exa>>proyeto;
+    if (exa and proyeto)
+        cout<<"aprobado";
+    else cout<<"desaprobado";
+
+
+
+
+
+    return 0;
+}
+
+
+
+incompleto
+#include <iostream>
+using namespace std;
+int main() {
+    int x,y,z;
+    cin>>x>>y>>z;
+    if(x<y){
+        if(y<z){
+            cout<<"x,y,z";}
+           if(z<x){
+            cout<<"z,x,y";}
+               else{
+                cout<<"x,z,y";}}
+    else if(x<z){
+        }
+
+
+
+    return 0;
+}
+
+realizar un programar que permita identificar si una personas es mayor o menor de edad utilizando ternario
+identificar si un nuero es par o impar
+
+incompleto
+#include <iostream>
+using namespace std;
+int main() {
+    int n,v;
+    cin>>n;
+    v=(n%2==0)?"par":"impar";
+
+
+
+
+
+
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cin>>n;
+    (n%2==0)?cout<<"par":cout<<"impar";
+
+
+
+
+
+
+
+    return 0;
+}
+

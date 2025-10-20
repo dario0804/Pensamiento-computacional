@@ -1,0 +1,36 @@
+un programa que al ingresar un numero de 2 digitos sume sus digitos 
+#include <iostream>
+using namespace std;
+int main (){
+int num,x,y;
+cin>>num;
+if(num<0){
+num=num*-1;}
+
+if(num>=10 and num<=99){
+    x=num/10;
+y=num%10;
+cout<<x+y;}
+else
+    cout<<"ingrese un numero de dos digitos";
+
+
+return 0;
+}
+
+ingresar un numero de 3 digitos y que lo inviente #include <iostream>
+using namespace std;
+int main (){
+int num,c,d,u;
+cin>>num;
+if (num>99 and num<1000){
+    c=num/100;
+d=(num/10)%10;
+u=num%10;
+cout<<u*100+d*10+c;
+}
+else
+    cout<<"ingrese un numero de 3 digitos";
+
+return 0;
+}
