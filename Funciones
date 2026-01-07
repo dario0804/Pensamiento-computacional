@@ -1,0 +1,74 @@
+funciones 
+#include <iostream>
+using namespace std;
+  int suma(int num1, int num2){
+      
+     return num1+num2;
+  }
+  int resta(int num1, int num2){
+      
+     return num1-num2;
+  }
+  int multiplicacion(int num1, int num2){
+      
+     return num1*num2;
+  }
+  int main(){
+      
+  int n1,n2,s,r,m;
+  cin>>n1>>n2;
+  s=suma(n1,n2);
+  r=resta(n1,n2);
+  m=multiplicacion(n1,n2);
+  cout<<"la suma es: "<<s<<endl;
+  cout<<"la resta es: "<<r<<endl;
+  cout<<"la multiplicacion es: "<<m<<endl;
+  
+    return 0;
+}
+
+funcion de recursividad
+#include <iostream>
+using namespace std;
+  int s(int n)
+  {
+      if(n==1)
+      {
+          return 1;
+      }
+      else 
+      {
+          return n+s(n-1);
+      }
+  }
+      int main(){
+          int n;
+          cin>>n;
+          cout<<s(n);
+  }
+
+
+#include <iostream>
+using namespace std;
+  int mcd(int a, int b)
+  {
+      if(b==0)
+      {
+          return a;
+      }
+      else 
+      {
+          return mcd(b,a%b);
+      }
+  }
+      int main(){
+          int A,B,resultado;
+          cout<<"ingrese el primer numero: ";
+          cin>>A;
+          cout<<"ingresar el segundo numero: ";
+          cin>>B;
+          resultado=mcd(A, B);
+          cout<<"El MCD de "<<A<<" y "<<B<<" es: "<<resultado;
+  
+          return 0;
+      }
