@@ -1,0 +1,67 @@
+PROBLEMA 
+
+#include <iostream>
+using namespace std;
+int main(){
+     int n;
+     cin>>n;
+     int A[n];
+    for(int i=0;i<n;i++){
+        A[i]=i+1;
+    }
+    for(int i=0;i<n;i++){
+        cout<<" "<<A[i];
+    }
+
+return 0;
+} 
+
+
+ARRAY UNIDIMENSIONAL
+1° 
+
+#include <iostream>
+using namespace std;
+int main(){
+     int n,a;
+     cin>>n;
+     int A[n];
+    for(int i=0;i<n;i++){
+        A[i]=i+1;
+        cin>>A[i];
+
+    }
+    a=0;
+    for(int i=0;i<n;i++){
+            a=a+A[i];
+        }
+    cout<<a/n;
+
+
+
+return 0;
+}
+
+2°
+#include <iostream>
+using namespace std;
+int main(){
+     int n;
+     float a;
+     cin>>n;
+     int A[n];
+    for(int i=0;i<n;i++){
+        A[i]=i+1;
+        cin>>A[i];
+
+    }
+    a=0;
+    for(int i=0;i<n;i++){
+            a=a+(1.0/A[i]);
+        }
+    cout<<n/a;
+
+
+
+return 0;
+}
